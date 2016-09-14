@@ -1,15 +1,15 @@
 "use strict";
 
-var Dispatcher = require('../dispatcher/Dispatcher');
-var ActionTypes = require('../constants/Constants').ActionTypes;
+var Dispatcher = require('../Dispatcher');
+var ActionTypes = require('../Constants').ActionTypes;
 var EventEmitter = require('events').EventEmitter;
 var assign = require('object-assign');
 EventEmitter.prototype.setMaxListeners(0);
 var CHANGE_EVENT = 'change';
 
-var ActionCreator = require('../actions/ActionCreator');
-var MapUtils = require('../utils/MapUtils');
-var GetApi = require('../utils/GetApi');
+var ActionCreator = require('../ActionCreator');
+var MapUtils = require('../MapUtils');
+var GetApi = require('../GetApi');
 
 
 var active_markers = [];

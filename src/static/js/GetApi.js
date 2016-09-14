@@ -1,5 +1,5 @@
 var $ = require('jquery');
-var ActionCreator = require('../actions/ActionCreator');
+var ActionCreator = require('../ActionCreator');
 
 
 /**

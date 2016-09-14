@@ -1,5 +1,5 @@
-var Dispatcher = require('../dispatcher/Dispatcher');
-var ActionTypes = require('../constants/Constants').ActionTypes;
+var Dispatcher = require('../Dispatcher');
+var ActionTypes = require('../Constants').ActionTypes;
 
 /**
  * @module actions/StatusActionCreator
