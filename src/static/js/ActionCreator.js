@@ -1,22 +1,13 @@
-var Dispatcher = require('../Dispatcher');
-var ActionTypes = require('../Constants').ActionTypes;
+var Dispatcher = require('./Dispatcher');
+var ActionTypes = require('./Constants').ActionTypes;
 
-/**
- * @module actions/StatusActionCreator
- */
+
 module.exports = {
-
-  createPin: function(latlng) {
+	
+  addPolyPin: function(polygon) {
     Dispatcher.dispatch({
-      type: ActionTypes.CREATE_PIN,
-      latlng: latlng
-    });
-  },
-
-  createPolyPin: function(latlng) {
-    Dispatcher.dispatch({
-      type: ActionTypes.CREATE_POLY_PIN,
-      latlng: latlng
+      type: ActionTypes.ADD_POLY_PIN,
+      polygon: polygon
     });
   },
 

@@ -1,5 +1,5 @@
 var $ = require('jquery');
-var ActionCreator = require('../ActionCreator');
+var ActionCreator = require('./ActionCreator');
 
 
 /**
@@ -8,10 +8,6 @@ var ActionCreator = require('../ActionCreator');
 
 module.exports = {
   
-  /**
-   * Loads all the parameters from the server
-   * @returns {undefined}
-   */
   requestPickups: function(polygon) {
      $.ajax({
         url: '/api/pickups',
@@ -35,29 +31,4 @@ module.exports = {
         data: JSON.stringify(polygon)
     });
   },
-/*
-   requestPickupCount: function(polygon) {
-     $.ajax({
-        url: '/api/pickup_count',
-        type: 'POST',
-        dataType: 'html',
-        contentType: "application/json",
-        success: function (data) {ActionCreator.receviePickupCount(JSON.parse(data).pickup_count);},
-        error: function (data) { console.log(data); },
-        data: JSON.stringify(polygon)
-    });
-  },
-
-   requestDropoffCount: function(polygon) {
-     $.ajax({
-        url: '/api/dropoff_count',
-        type: 'POST',
-        dataType: 'html',
-        contentType: "application/json",
-        success: function (data) {ActionCreator.recevieDropoffCount(JSON.parse(data).dropoff_count);},
-        error: function (data) { console.log(data); },
-        data: JSON.stringify(polygon)
-    });
-  },
-*/
 }
