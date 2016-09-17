@@ -17,21 +17,10 @@ git submodule update
 ### Python
 Next, install Python dependencies.
 
-cd into repo
-
 ```
 cd Uber
-```
-Create and use virtualenv.
-
-```
 virtualenv venv
 source venv/bin/activate
-```
-
-Install dependencies.
-
-```
 pip install -r requirements.txt
 ```
 
@@ -63,7 +52,6 @@ GRANT ALL PRIVILEGES ON uber_trip_locations TO uber
 ```
 cd src
 python create_db.py
-
 ```
 
 ## Use
