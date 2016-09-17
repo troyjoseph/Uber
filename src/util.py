@@ -34,7 +34,7 @@ returns:
    where elements are ordered by descending weight.
 '''
 def get_pickups(polygon):
-    conn = psycopg2.connect("dbname=postgis user=troy")
+    conn = psycopg2.connect("dbname=postgis user=uber")
     cur = conn.cursor()
 
     # validate data so we don't have sql injections
@@ -92,7 +92,7 @@ returns:
    where elements are ordered by descending weight.
 '''
 def get_dropoffs(polygon):
-    conn = psycopg2.connect("dbname=postgis user=troy")
+    conn = psycopg2.connect("dbname=postgis user=uber")
     cur = conn.cursor()
 
     # validate data so we don't have sql injections
